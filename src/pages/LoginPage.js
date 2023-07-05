@@ -60,48 +60,10 @@ const LoginPage = () => {
           message: `${error.message}`,
           type: "error"
         })
-    })
-  } 
+      })
+  }
 
   const useStyle = makeStyles()((theme) => ({
-    container: {
-      height: "100vh",
-      width: "100vw",
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-    },
-    boxLeft: {
-      width: "70vw",
-      height: "100%",
-      background: "linear-gradient(148.1deg, #ebf2ff 79.21%, #D6BBFB 101.83%);"
-    },
-    content: {
-      display: "flex",
-      flexDirection: "column",
-      width: "100%",
-      height: "100%",
-      justifyContent: "center",
-      alignItems: "center",
-      padding: "52px"
-    },
-    title: {
-      marginBottom: "66px",
-    },
-    desc: {
-      display: "flex",
-      flexDirection: "column",
-      gap: "32px",
-      width: "650px",
-      marginBottom: "101px"
-    },
-    boxRight: {
-      width: "40vw",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center"
-    },
     tab: {
       width: "350px",
       padding: "5px",
@@ -111,19 +73,19 @@ const LoginPage = () => {
     },
     btnGthb: {
       display: "flex",
-      gap: 10, 
+      gap: 10,
       backgroundColor: "grey",
       color: "black",
       fontFamily: "Work sans",
       textTransform: "capitalize",
       "&:hover": {
-      backgroundColor: "black",
-      color: "white",
-      } 
+        backgroundColor: "black",
+        color: "white",
+      }
     },
     btnggle: {
       display: "flex",
-      gap: 10, 
+      gap: 10,
       backgroundColor: "white",
       border: "1px solid grey",
       color: "black",
@@ -140,14 +102,14 @@ const LoginPage = () => {
     },
     btnLnkd: {
       display: "flex",
-      gap: 10, 
+      gap: 10,
       backgroundColor: "#1976d2",
       color: "white",
       fontFamily: "Work sans",
       textTransform: "capitalize",
       "&:hover": {
-      backgroundColor: "#1976d2",
-      color: "white",
+        backgroundColor: "#1976d2",
+        color: "white",
       },
     },
     logo: {
@@ -161,41 +123,40 @@ const LoginPage = () => {
   const { classes } = useStyle();
 
   return (
-    <div className={classes.container}>
-      <div className={classes.boxLeft}>
-        <Box className={classes.content}>
-          <h1 className={classes.title}>Jumpstart Your Dream Career.</h1>
-          <Box className={classes.desc}>
-            <p>JobCom is a platform that help Tech International Students in Australia to showcase their talents through stand out portfolio
-              <br/>
-              <br/>
-            Share your Portfolio Link with the Recruiters!</p>
-          </Box>
-          <img src={coverImage} alt='background cover' />
-        </Box>
+    <div className='h-screen w-screen flex'>
+
+      <div className='w-[70%] h-[100%] p-14'>
+        {/* Hero Image */}
+        <div className='w-[100%] h-[100%] bg-[url("./images/coverImage.png")] bg-no-repeat bg-cover bg-center rounded-[50px] pt-20 px-12'>
+          <h1 className='font-bold text-4xl mb-16'>Jumpstart Your Dream Career.</h1>
+          <p className='font-medium text-xl'>JobCom is a platform that help Tech International Students in Australia to showcase their talents through stand out portfolio</p>
+          <br />
+          <br />
+          <p className='font-medium text-xl'>Share your Portfolio Link with the Recruiters!</p>
+        </div>
       </div>
-      <div className={classes.boxRight}>
-        <Box className={classes.logo}>
-          <img src={logo} alt="company logo"/>
-        </Box>
-        <Box className={classes.tab}>
-          <TabContext value={value}>
+
+      <div className='w-[30%] h-[100%] flex flex-col items-center'>
+        {/* Logo */}
+        <img className='my-20' src={logo} alt="company logo" />
+        <div className='mt-8'>
+          <TabContext className='border-2 border-black' value={value}>
             <Box>
               <Tabs value={value} onChange={handleChange} textColor="secondary" indicatorColor='secondary' centered>
                 <Tab label="login" value="1" />
-                <Tab label="sign up" value="2"/>
+                <Tab label="sign up" value="2" />
               </Tabs>
             </Box>
-            <TabPanel value="1"><LoginTab/></TabPanel>
+            <TabPanel value="1"><LoginTab /></TabPanel>
             <TabPanel value="2"><SignUpTab /></TabPanel>
             <p>OR</p>
             <Box className={classes.btngrp}>
-              <Button className={classes.btnggle} size="large" onClick={() => signInWithGoogle()} fullWidth><FcGoogle/> Continue with Google</Button>
-              <Button className={classes.btnLnkd} size="large" fullWidth disabled><GrLinkedin/> Continue with LinkedIn</Button>
-              <Button className={classes.btnGthb} size="large" fullWidth disabled><GoMarkGithub/> Continue with GitHub</Button>
+              <Button className={classes.btnggle} size="large" onClick={() => signInWithGoogle()} fullWidth><FcGoogle /> Continue with Google</Button>
+              <Button className={classes.btnLnkd} size="large" fullWidth disabled><GrLinkedin /> Continue with LinkedIn</Button>
+              <Button className={classes.btnGthb} size="large" fullWidth disabled><GoMarkGithub /> Continue with GitHub</Button>
             </Box>
           </TabContext>
-        </Box>
+        </div>
       </div>
     </div>
   )
