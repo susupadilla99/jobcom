@@ -90,7 +90,7 @@ const SignUpTab = () => {
         size="large"
         disabled={disable}
         fullWidth
-        sx={{bgcolor: "#6941C6", textTransform: "capitalize", fontFamily: "Work Sans"}}
+        sx={{bgcolor: "#1370FB", textTransform: "capitalize", fontFamily: "Work Sans"}}
       >
         sign up
       </Button>

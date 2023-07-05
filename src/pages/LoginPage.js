@@ -74,7 +74,7 @@ const LoginPage = () => {
     boxLeft: {
       width: "70vw",
       height: "100%",
-      background: "linear-gradient(148.1deg, #F4EBFF 79.21%, #D6BBFB 101.83%);"
+      background: "linear-gradient(148.1deg, #ebf2ff 79.21%, #D6BBFB 101.83%);"
     },
     content: {
       display: "flex",
@@ -96,7 +96,7 @@ const LoginPage = () => {
       marginBottom: "101px"
     },
     boxRight: {
-      width: "30vw",
+      width: "40vw",
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -106,14 +106,14 @@ const LoginPage = () => {
       width: "350px",
       padding: "5px",
       borderRadius: "10px",
-      border: "1px solid gray",
+      border: "1px solid grey",
       textAlign: "center"
     },
     btnGthb: {
       display: "flex",
       gap: 10, 
       backgroundColor: "grey",
-      color: "white",
+      color: "black",
       fontFamily: "Work sans",
       textTransform: "capitalize",
       "&:hover": {
@@ -126,7 +126,7 @@ const LoginPage = () => {
       gap: 10, 
       backgroundColor: "white",
       border: "1px solid grey",
-      color: "grey",
+      color: "black",
       fontFamily: "Work sans",
       textTransform: "capitalize"
     },
