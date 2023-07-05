@@ -141,14 +141,14 @@ const LoginPage = () => {
         <img className='my-20' src={logo} alt="company logo" />
         <div className='mt-8'>
           <TabContext className='border-2 border-black' value={value}>
+            <TabPanel value="1"><LoginTab /></TabPanel>
+            <TabPanel value="2"><SignUpTab /></TabPanel>
             <Box>
-              <Tabs value={value} onChange={handleChange} textColor="secondary" indicatorColor='secondary' centered>
-                <Tab label="login" value="1" />
+              <Tabs className='mb-12' value={value} onChange={handleChange} textColor="secondary" indicatorColor='secondary' centered>
+                <Tab label="login" value="1" >Don't have an Account? Sign Up</Tab>
                 <Tab label="sign up" value="2" />
               </Tabs>
             </Box>
-            <TabPanel value="1"><LoginTab /></TabPanel>
-            <TabPanel value="2"><SignUpTab /></TabPanel>
             <p>OR</p>
             <Box className={classes.btngrp}>
               <Button className={classes.btnggle} size="large" onClick={() => signInWithGoogle()} fullWidth><FcGoogle /> Continue with Google</Button>
