@@ -1,7 +1,7 @@
 # JobCom
 
 <p align="center">
-  <a href="https://jobcom.vercel.app/" target="_blank"><img src="./public/thumbnail.png" alt="jobcom-thumbnail"></a>
+  <a href="https://worknet-jobcom.vercel.app/" target="_blank"><img src="./public/thumbnail.png" alt="jobcom-thumbnail"></a>
 </p>
 
 JobCom is a platform that aims to help Tech International Students in Australia to showcase their talents through a stand-out portfolio. 
@@ -18,7 +18,7 @@ It is a platform where recruiters can easily find valuable candidates for their 
 
 ## Live Project
 
-Click [here](worknet-jobcom.vercel.app/) for the live version of this project.
+Click [here](https://worknet-jobcom.vercel.app/) for the live version of this project.
 
 ## Built Using
 - React v18
