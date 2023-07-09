@@ -18,7 +18,7 @@ It is a platform where recruiters can easily find valuable candidates for their 
 
 ## Live Project
 
-Click [here](https://thejobcom.vercel.app/) for the live version of this project.
+Click [here](worknet-jobcom.vercel.app/) for the live version of this project.
 
 ## Built Using
 - React v18
@@ -27,7 +27,7 @@ Click [here](https://thejobcom.vercel.app/) for the live version of this project
 - Firebase
 
 ## Getting Started
-### `git clone https://github.com/theJobCom/jobcom.git`
+### `git clone https://github.com/susupadilla99/jobcom`
 Clone this respository to your local computer by copy-pasting this on your terminal.
 
 - Then, open the project folder: `cd jobcom`
@@ -42,6 +42,10 @@ Run 'npm start' to start the live server. It runs the app in the development mod
 - Open [http://localhost:3000](http://localhost:3000) to view it in your browser. (The page will reload when you make changes.)
 
 ## Author
+**Daniel Le - Frontend Developer**
+- Github: [@susupadilla99](https://github.com/susupadilla99)
+- LinkedIn: [Daniel Le](https://www.linkedin.com/in/daniel-le3/)
+
 **David Ouma - Frontend Developer**
 - Github: [@daudi13](https://github.com/daudi13/)
 - Twitter: [@davouma](https://twitter.com/daudi13/)
@@ -51,6 +55,7 @@ Run 'npm start' to start the live server. It runs the app in the development mod
 - Github: [@ndagisusan](https://github.com/ndagisusan)
 - Twitter: [@ndagi_susan](https://twitter.com/ndagi_susan/)
 - LinkedIn: [@susanndagi](https://www.linkedin.com/in/susanndagi)
+
 
 ## Contributing
 Contributions, issues, and feature requests are welcome!
