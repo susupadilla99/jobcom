@@ -139,7 +139,7 @@ const LoginPage = () => {
       <div className='w-[30%] h-[100%] flex flex-col items-center'>
         {/* Logo */}
         <img className='my-20' src={logo} alt="company logo" />
-        <div className='mt-8'>
+        <div className='flex flex-col mt-8 border-2'>
           <TabContext className='border-2 border-black' value={value}>
             <TabPanel value="1"><LoginTab /></TabPanel>
             <TabPanel value="2"><SignUpTab /></TabPanel>

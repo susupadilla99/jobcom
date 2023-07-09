@@ -53,7 +53,7 @@ const LoginTab = () => {
   console.log(disable);
 
   return (
-    <form  onSubmit={handleSubmit(onSubmit)} className={classes.form}>
+    <form  onSubmit={handleSubmit(onSubmit)} className='flex flex-col gap-[10px] w-[360px] border-2'>
       <label>Email</label>
       <TextField
       variant='outlined'
